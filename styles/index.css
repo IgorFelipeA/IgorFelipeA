@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../assets/images/body-pokemon.png");
+}
+
+.logo {
+    height: 75px;
+    width: 200px;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.search-bar {
+    width: 20%;
+}
+
+main {
+    background-color: rgb(255, 246, 231);
+    padding-top: 2rem;
+}
+
+section {
+    background-color: rgb(255, 246, 231);
+    padding-bottom: 2rem;
+}

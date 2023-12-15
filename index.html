@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto de integracao com API Pokemon">
+    <meta name="keywords" content="Pokemon, Pokemon API, Pocket Monsters, Pokedex, Pokeballs, Pokemon Maps">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a>
+                <img class="logo" src="assets/images/logo-pokemon.png">
+            </a>
+            <button class="navbar-toggler border-2 border-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-underline mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pokedex</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pokeballs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Personagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mapas</a>
+                    </li>
+                </ul>
+                <div class="input-group search-bar">
+                    <input type="search" class="form-control bg-secondary" placeholder="Pesquisar" aria-label="Pesquisa"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-light" type="button" id="button-addon2">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <section>
+            <div class="card border-warning">
+                <img src="assets/images/pokemon.png" class="card-img-top" alt="Intro Pokemon">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Pokemons</h2>
+                    <p class="card-text">Pokémon, uma abreviação de "Pocket Monsters" (Monstros de Bolso), é uma
+                        franquia de mídia
+                        japonesa criada por Satoshi Tajiri e Ken Sugimori. Ela foi introduzida pela primeira vez pela
+                        Nintendo, Game Freak e Creatures em 1996. A franquia Pokémon abrange uma variedade de mídias,
+                        incluindo jogos de vídeo, desenhos animados, filmes, mangás e produtos relacionados.</p>
+                    <p class="card-text">Os jogos Pokémon são geralmente RPGs (Role-Playing Games) nos quais os
+                        jogadores assumem o papel
+                        de treinadores Pokémon, cujo objetivo principal é capturar e treinar criaturas chamadas Pokémon.
+                        Os treinadores usam seus Pokémon para batalhar contra outros treinadores e alcançar objetivos no
+                        mundo fictício dos jogos. Cada Pokémon tem habilidades únicas, evolui para formas mais poderosas
+                        e pertence a diferentes tipos, como fogo, água, planta, elétrico, entre outros.</p>
+
+                    <p class="card-text">Além dos jogos, a franquia Pokémon inclui uma série de desenhos animados
+                        populares, começando com
+                        a série "Pokémon: A Série Animada", que segue as aventuras de Ash Ketchum e seu parceiro Pikachu
+                        enquanto viajam pelo mundo Pokémon. Os filmes Pokémon também são uma parte significativa da
+                        franquia, proporcionando histórias emocionantes centradas em torno de Pokémon lendários e
+                        eventos especiais.</p>
+
+                    <p class="card-text">Ao longo dos anos, Pokémon tornou-se uma das franquias de entretenimento mais
+                        bem-sucedidas e
+                        duradouras do mundo, com uma enorme base de fãs global.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card border-warning">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/pokemon-card-history.png" class="img-fluid rounded-start"
+                            alt="Imagem da Historia Pokemon">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">O inicio do Mundo Pokemon</h4>
+                            <p class="card-text">Há quatro bilhões de anos, no caos primordial, Arceus, o Deus Pokémon,
+                                nasceu de um ovo. Ele criou Dialga, Palkia e Giratina para governar o tempo, espaço e
+                                antimatéria. O planeta Pokémon foi formado por Dialga e Palkia, mas Giratina foi banido
+                                para o Distortion World por sua rebeldia.
+                            </p>
+                            <p class="card-text">
+                                Arceus criou os Pokémon lendários para equilibrar a Terra: Groudon, Kyogre e Rayquaza.
+                                Para evitar conflitos, Regirock, Regice e Registeel foram criados. Dialga e Palkia
+                                também deram vida a Celebi e Jirachi para proteger a natureza e atender desejos.
+                            </p>
+                            <p class="card-text">
+                                Cresselia e Darkrai foram criados para influenciar sonhos e pesadelos, enquanto Heatran
+                                controla o núcleo da Terra. Lugia e Ho-Oh, em uma batalha, deram origem às aves
+                                lendárias e aos cães lendários.
+                            </p>
+                            <p class="card-text">
+                                Latios e Latias guardam o infinito, Shaymin e Celebi protegem a natureza, e Manaphy e
+                                Phione governam os mares. Kyurem se dividiu em Reshiram e Zekrom, buscando equilíbrio.
+                                Xerneas controla a vida, Yveltal a morte, e Zygarde a justiça.
+                            </p>
+                            <p class="card-text">
+                                Arceus também criou os "Três Mosqueteiros" (Virizion, Cobalion, Terrakion) e Keldeo para
+                                proteger a terra. Thundurus, Tornadus e Landorus controlam os céus, enquanto Meloetta
+                                traz felicidade através da música.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card border-warning h-100">
+                        <img src="assets/images/arceus.png" class="card-img-top" alt="Pokemon Arceus">
+                        <h3 class="card-title mx-auto">Arceus</h3>
+                        <div class="card-body">
+                            <p class="card-text">Segundo as lendas de Sinnoh, este Pokémon surgiu de um ovo e moldou tudo o que existe neste mundo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-warning h-100">
+                        <img src="assets/images/dialga.png" class="card-img-top" alt="Pokemon Dialga">
+                        <h3 class="card-title mx-auto">Dialga</h3>
+                        <div class="card-body">
+                            <p class="card-text">Tem o poder de controlar o tempo. Aparece nos mitos da região de Sinnoh
+                                como uma antiga divindade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-warning h-100">
+                        <img src="assets/images/palkia.png" class="card-img-top" alt="...">
+                        <h3 class="card-title mx-auto">Palkia</h3>
+                        <div class="card-body">
+                            <p class="card-text">Tem a capacidade de distorcer o espaço. É descrito como uma divindade
+                                na mitologia da região de Sinnoh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-warning h-100">
+                        <img src="assets/images/giratina.png" class="card-img-top" alt="...">
+                        <h3 class="card-title mx-auto">Giratina</h3>
+                        <div class="card-body">
+                            <p class="card-text">Diz-se que este Pokémon vive num mundo do outro lado do nosso, onde o
+                                conhecimento comum é distorcido e estranho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
